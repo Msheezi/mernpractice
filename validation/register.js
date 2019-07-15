@@ -14,11 +14,11 @@ module.exports = function validateRegisterInput(data) {
     }
 
     if (Validator.isEmpty(data.handle)){
-        errors.handle = 'Handle field is required';
+        errors.handle = 'Please enter a valid Handle';
     }
 
     if (Validator.isEmpty(data.email)){
-        errors.email = 'Email field is required bro'
+        errors.email = 'Email field is required'
     }
 
     if (!Validator.isEmail(data.email)) {
